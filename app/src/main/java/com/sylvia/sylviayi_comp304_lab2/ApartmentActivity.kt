@@ -11,7 +11,7 @@ import android.widget.TextView
 class ApartmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_apartment)
+        setContentView(R.layout.property_type_selection)
 
     }
 }

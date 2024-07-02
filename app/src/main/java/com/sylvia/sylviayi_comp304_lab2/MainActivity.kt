@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val enterButton = findViewById<Button>(R.id.button)
         enterButton.setOnClickListener {
-            val intent = Intent(this, HomeTypesActivity::class.java)
+            val intent = Intent(this, PropertyTypeSelectionActivity::class.java)
             startActivity(intent)
         }
     }

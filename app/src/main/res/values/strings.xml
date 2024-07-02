@@ -1,12 +1,31 @@
 <resources>
     <string name="app_name">SylviaYi_COMP304_Lab2</string>
     <string name="enter">Enter</string>
+    <string name="submit">Submit</string>
 
     <string name="apartment">Apartment</string>
     <string name="detached_home">Detached Home</string>
     <string name="semi_detached_home">Semi-detached Home</string>
-    <string name="condominium_apartment">Condominium Apartment</string>
+    <string name="condo">Condominium Apartment</string>
     <string name="town_house">Town House</string>
 
+    <string name="select">Please select from the following options:</string>
+    <string name="address">Address</string>
+    <string name="price">Price</string>
+
+    <string name="address_apt">235 Apple Ave,Toronto, ON, 2J2H6J</string>
+    <string name="price_apt">$500,000</string>
+
+    <string name="address_condo">509 Bee Dr,Toronto, ON, 3R2M5J</string>
+    <string name="price_condo">$650,000</string>
+
+    <string name="address_townhouse">3235 Danford Ave, Toronto,ON, 5K3S6J</string>
+    <string name="price_townhouse">$550,000</string>
+
+    <string name="address_det">1035 Ford Ave, Scarbrough, ON, 3J5N6J</string>
+    <string name="price_det">$1500,000</string>
+
+    <string name="address_semidet">1235 Apple Ave, Oakland, ON, 8H3O6M</string>
+    <string name="price_semidet">$1200,000</string>
 
 </resources>
