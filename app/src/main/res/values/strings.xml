@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SylviaYi_COMP304_Lab2</string>
+    <string name="enter">Enter</string>
+
+    <string name="apartment">Apartment</string>
+    <string name="detached_home">Detached Home</string>
+    <string name="semi_detached_home">Semi-detached Home</string>
+    <string name="condominium_apartment">Condominium Apartment</string>
+    <string name="town_house">Town House</string>
+
+
+</resources>
