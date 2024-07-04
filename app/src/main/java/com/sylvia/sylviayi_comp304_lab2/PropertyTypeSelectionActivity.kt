@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
 
+
 class PropertyTypeSelectionActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,25 +23,18 @@ class PropertyTypeSelectionActivity : AppCompatActivity() {
 
         buttonSubmit.setOnClickListener {
             when {
-                checkBoxApartment.isChecked -> navigateToHomeType("Apartment")
-                checkBoxDetachedHome.isChecked -> navigateToHomeType("Detached Home")
-                checkBoxSemiDetachedHome.isChecked -> navigateToHomeType("Semi-detached Home")
-                checkBoxCondo.isChecked -> navigateToHomeType("Condominium Apartment")
-                checkBoxTownHouse.isChecked -> navigateToHomeType("Town House")
+                checkBoxApartment.isChecked -> navigateToHomeType(ApartmentActivity::class.java)
+                checkBoxDetachedHome.isChecked -> navigateToHomeType(DetachedHomeActivity::class.java)
+                checkBoxSemiDetachedHome.isChecked -> navigateToHomeType(SemiDetachedHomeActivity::class.java)
+                checkBoxCondo.isChecked -> navigateToHomeType(CondoActivity::class.java)
+                checkBoxTownHouse.isChecked -> navigateToHomeType(TownhouseActivity::class.java)
                 else -> return@setOnClickListener
             }
         }
     }
 
-    private fun navigateToHomeType(homeType: String) {
-        val intent = when (homeType) {
-            "Apartment" -> Intent(this, ApartmentActivity::class.java)
-           // "Detached Home" -> Intent(this, DetachedHomeActivity::class.java)
-          //  "Semi-detached Home" -> Intent(this, SemiDetachedHomeActivity::class.java)
-          //  "Condominium Apartment" -> Intent(this, CondoActivity::class.java)
-          //  "Town House" -> Intent(this, TownHouseActivity::class.java)
-            else -> throw IllegalArgumentException("Invalid home type")
-        }
+    private fun navigateToHomeType(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
         startActivity(intent)
     }
 }

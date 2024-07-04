@@ -29,18 +29,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.apartment -> showHomes("Apartment")
-            R.id.detached_home -> showHomes("Detached Home")
-            R.id.semi_detached_home -> showHomes("Semi-detached Home")
-            R.id.condominium_apartment -> showHomes("Condominium Apartment")
-            R.id.town_house -> showHomes("Town House")
+            R.id.apartment -> navigateTo(ApartmentActivity::class.java)
+            R.id.detached_home -> navigateTo(DetachedHomeActivity::class.java)
+            R.id.semi_detached_home -> navigateTo(SemiDetachedHomeActivity::class.java)
+            R.id.condominium_apartment -> navigateTo(CondoActivity::class.java)
+            R.id.town_house -> navigateTo(TownhouseActivity::class.java)
             else -> return super.onOptionsItemSelected(item)
         }
         return true
     }
 
-    private fun showHomes(homeType: String) {
-        Toast.makeText(this, "Selected: $homeType", Toast.LENGTH_LONG).show()
+    private fun navigateTo(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
-
 }

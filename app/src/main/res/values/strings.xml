@@ -2,6 +2,7 @@
     <string name="app_name">SylviaYi_COMP304_Lab2</string>
     <string name="enter">Enter</string>
     <string name="submit">Submit</string>
+    <string name="visit">Select to visit</string>
 
     <string name="apartment">Apartment</string>
     <string name="detached_home">Detached Home</string>
