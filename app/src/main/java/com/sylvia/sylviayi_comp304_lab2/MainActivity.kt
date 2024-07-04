@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
             R.id.semi_detached_home -> navigateTo(SemiDetachedHomeActivity::class.java)
             R.id.condominium_apartment -> navigateTo(CondoActivity::class.java)
             R.id.town_house -> navigateTo(TownhouseActivity::class.java)
+            R.id.checkout -> navigateTo(CheckoutActivity::class.java)
+            R.id.homepage -> navigateTo(MainActivity::class.java)
             else -> return super.onOptionsItemSelected(item)
         }
         return true

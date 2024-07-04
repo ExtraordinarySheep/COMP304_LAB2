@@ -27,5 +27,5 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/c_logo" />
+        app:srcCompat="@drawable/c_logo2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

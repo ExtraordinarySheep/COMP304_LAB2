@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">SylviaYi_COMP304_Lab2</string>
+    <string name="app_name">LeaseOrRentHome_Inc.</string>
     <string name="enter">Enter</string>
     <string name="submit">Submit</string>
     <string name="visit">Select to visit</string>
+    <string name="checkout">Check out</string>
+    <string name="homepage">Home Page</string>
 
     <string name="apartment">Apartment</string>
     <string name="detached_home">Detached Home</string>

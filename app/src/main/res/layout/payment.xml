@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonCash"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCreditCard"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDebitCard"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="Debit Card" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Payment" />
+</LinearLayout>
