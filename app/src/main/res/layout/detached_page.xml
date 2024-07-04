@@ -15,14 +15,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/detached_home"
-        android:textSize="24sp" />
+        android:textSize="24sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/address"
         android:textColor="#3F51B5"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="@string/price"
         android:textColor="#3F51B5"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:id="@+id/checkBoxVisitApartment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/visit" />
+        android:text="@string/visit"/>
 
 
 </LinearLayout>
